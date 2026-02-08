@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APPLY NOW | AYAZ CHAUHAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .notification { display: none; transition: all 0.5s ease; }
+    </style>
+</head>
+<body class="bg-[#0f1111] text-white font-sans p-6">
+    <div class="max-w-xl mx-auto mt-10">
+        <div id="success-box" class="notification bg-green-600 p-4 rounded-lg mb-6 text-center font-bold shadow-[0_0_20px_rgba(0,255,0,0.3)]">
+            ✅ APPLICATION SENT! Notifications active.
+        </div>
+
+        <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800 shadow-2xl">
+            <h1 class="text-3xl font-black text-[#febd69] mb-2 uppercase italic">Join the Mission</h1>
+            <p class="text-gray-500 text-sm mb-8 italic border-l-2 border-yellow-500 pl-3">"Apna data secure portal mein submit karein."</p>
+
+            <form id="applyForm" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Full Name</label>
+                    <input type="text" required class="w-full bg-black border border-gray-700 p-3 rounded focus:border-yellow-500 outline-none transition" placeholder="Enter name">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Mobile Number</label>
+                    <input type="tel" required class="w-full bg-black border border-gray-700 p-3 rounded focus:border-yellow-500 outline-none transition" placeholder="+91 XXXXX XXXXX">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Email Address</label>
+                    <input type="email" required class="w-full bg-black border border-gray-700 p-3 rounded focus:border-yellow-500 outline-none transition" placeholder="email@example.com">
+                </div>
+                
+                <button type="submit" class="w-full bg-[#febd69] text-black font-black py-4 rounded-xl hover:bg-white hover:scale-105 transition duration-300 shadow-lg">
+                    SUBMIT APPLICATION
+                </button>
+            </form>
+        </div>
+        
+        <p class="text-center mt-8">
+            <a href="index.html" class="text-xs text-gray-600 underline hover:text-white">← BACK TO COMMAND CENTER</a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('applyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Show notification
+            const successBox = document.getElementById('success-box');
+            successBox.style.display = 'block';
+            // Reset form
+            this.reset();
+            // Scroll to top
+            window.scrollTo(0,0);
+        });
+    </script>
+</body>
+</html>
