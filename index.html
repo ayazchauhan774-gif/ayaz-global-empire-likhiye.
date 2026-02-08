@@ -2,44 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AYAZ CHAUHAN | GLOBAL EMPIRE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYAZ CHAUHAN | SUPREME ACCESS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;900&display=swap" rel="stylesheet">
     <style>
-        body { background: #000; overflow: hidden; }
-        .hero-glow { background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000 100%); }
-        .gold-border { border: 1px solid #febd69; box-shadow: 0 0 15px rgba(254, 189, 105, 0.2); }
-        .btn-premium { background: #febd69; color: black; font-weight: 900; transition: all 0.3s; }
-        .btn-premium:hover { background: white; transform: scale(1.05); box-shadow: 0 0 30px #febd69; }
+        body { background: #000; color: white; font-family: 'Inter', sans-serif; overflow: hidden; }
+        .syncopate { font-family: 'Syncopate', sans-serif; }
+        .gold-gradient { background: linear-gradient(135deg, #fff 0%, #febd69 50%, #8b6b3f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(25px); border: 1px solid rgba(254, 189, 105, 0.2); }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 100; backdrop-filter: blur(20px); }
+        .input-premium { background: transparent; border-bottom: 2px solid rgba(254, 189, 105, 0.2); color: white; transition: all 0.4s; }
+        .input-premium:focus { border-color: #febd69; outline: none; }
     </style>
 </head>
-<body class="hero-glow text-white h-screen flex flex-col items-center justify-center p-6 font-sans">
+<body class="bg-black">
 
-    <div class="absolute top-10 tracking-[10px] text-xs opacity-40 uppercase">Silicon Valley Standards</div>
-
-    <div class="text-center max-w-4xl border-l-4 border-r-4 border-[#febd69] px-10 py-20 rounded-[50px] bg-black/50">
-        <h1 class="text-7xl font-black mb-2 italic tracking-tighter uppercase">Ayaz <span class="text-[#febd69]">Chauhan</span></h1>
-        <p class="text-xl text-gray-500 mb-12 italic">"Building the $100 Trillion Vision, One Node at a Time."</p>
-
-        <div class="space-y-6 max-w-sm mx-auto">
-            <a href="universe.html" class="block btn-premium py-5 rounded-full text-2xl italic">ENTER THE UNIVERSE</a>
+    <section class="min-h-screen flex flex-col items-center justify-center relative px-6">
+        <div class="text-center mb-16">
+            <h1 class="syncopate text-6xl md:text-[8rem] font-black gold-gradient leading-none mb-6">AYAZ<br>CHAUHAN</h1>
+            <p class="tracking-[15px] opacity-30 text-xs uppercase mb-12">Silicon Valley Architecture</p>
             
-            <div class="grid grid-cols-2 gap-4">
-                <a href="hiring.html" class="gold-border py-3 rounded-xl text-xs hover:bg-white/10 transition">JOIN WORKERS</a>
-                <a href="services.html" class="gold-border py-3 rounded-xl text-xs hover:bg-white/10 transition">AI SERVICES</a>
-            </div>
+            <button onclick="openPortal()" class="px-16 py-6 rounded-full border border-[#febd69] text-[#febd69] font-black tracking-widest uppercase hover:bg-[#febd69] hover:text-black transition-all duration-700 shadow-[0_0_30px_rgba(254,189,105,0.2)]">
+                GET INSTANT ACCESS →
+            </button>
         </div>
 
-        <div class="mt-16 flex items-center justify-center space-x-2">
-            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <p class="text-[10px] text-gray-600 uppercase tracking-widest">Global Server: ACTIVE & SECURE</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full opacity-60">
+            <div class="glass-panel p-6 rounded-3xl text-center text-[10px] tracking-[5px] uppercase">Node Status: Active</div>
+            <div class="glass-panel p-6 rounded-3xl text-center text-[10px] tracking-[5px] uppercase">Mission: ₹100CR</div>
+            <div class="glass-panel p-6 rounded-3xl text-center text-[10px] tracking-[5px] uppercase">Target: 04.03.2026</div>
+        </div>
+    </section>
+
+    <div id="portalModal" class="modal-overlay items-center justify-center">
+        <div class="glass-panel p-12 rounded-[50px] max-w-lg w-full text-center relative mx-4">
+            <button onclick="closePortal()" class="absolute top-6 right-8 text-gray-500 hover:text-white">✕</button>
+            <h3 class="syncopate text-2xl gold-gradient mb-4">IDENTITY SYNC</h3>
+            <p class="text-xs text-gray-400 tracking-widest uppercase mb-10">Secure Entry Protocol</p>
+            
+            <form class="space-y-10">
+                <input type="email" placeholder="OFFICIAL EMAIL ADDRESS" class="w-full input-premium py-4 text-center tracking-widest text-xs uppercase" required>
+                <input type="tel" placeholder="PRIVATE PHONE NUMBER" class="w-full input-premium py-4 text-center tracking-widest text-xs uppercase" required>
+                
+                <button type="button" onclick="verify()" class="w-full bg-[#febd69] text-black py-5 rounded-full font-black tracking-[8px] uppercase hover:bg-white transition">
+                    VERIFY IDENTITY
+                </button>
+            </form>
         </div>
     </div>
 
-    <footer class="absolute bottom-10 text-[10px] text-gray-800 uppercase tracking-[5px]">
-        Authorized Access Only • 2026 Empire
-    </footer>
+    <script>
+        function openPortal() { document.getElementById('portalModal').style.display = 'flex'; }
+        function closePortal() { document.getElementById('portalModal').style.display = 'none'; }
+        function verify() {
+            alert('IDENTITY VERIFIED. ACCESS GRANTED TO AYAZ CHAUHAN NETWORK.');
+            window.location.href = 'universe.html';
+        }
+    </script>
 
 </body>
 </html>
+
 
 
