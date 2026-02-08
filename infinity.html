@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE INFINITE VAULT | AYAZ CHAUHAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #000; color: #febd69; overflow-x: hidden; font-family: monospace; }
+        .depth-layer { border: 1px solid #333; padding: 20px; margin-top: 20px; border-radius: 15px; background: rgba(255,255,255,0.02); }
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+    <div id="portal-root">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-black italic mb-4 uppercase">Level <span id="level-count">1</span>: Deep Data Mining</h1>
+            <p class="text-gray-500 mb-8 border-l-2 border-[#febd69] pl-4">"Silicon Valley Secret: Every layer reveals more power."</p>
+            
+            <div class="bg-gray-900 p-8 rounded-2xl shadow-2xl">
+                <p class="text-sm text-green-500 mb-4 font-bold tracking-widest uppercase blink">> SYSTEM ENCRYPTED</p>
+                <p class="text-gray-400 mb-6">Aap abhi hamare global network ke core mein hain. Agle level par jaane ke liye 'Go Deeper' dabayein. Har level aapko billionaire vision ke aur kareeb le jayega.</p>
+                
+                <button onclick="goDeeper()" class="w-full bg-[#febd69] text-black font-black py-4 rounded-xl hover:bg-white transition-all transform hover:scale-105">
+                    GO DEEPER INTO THE VAULT ↓
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentLevel = 1;
+        function goDeeper() {
+            currentLevel++;
+            const root = document.getElementById('portal-root');
+            const newLayer = document.createElement('div');
+            newLayer.className = 'depth-layer animate-bounce-short';
+            newLayer.innerHTML = `
+                <h2 class="text-2xl font-bold mb-2">Level ${currentLevel}: Accessing Nodes...</h2>
+                <p class="text-xs text-gray-500 mb-4 font-mono">> Node_${Math.random().toString(36).substring(7)}: ACTIVE</p>
+                <button onclick="goDeeper()" class="text-sm bg-gray-800 text-[#febd69] px-6 py-2 rounded border border-[#febd69] hover:bg-[#febd69] hover:text-black transition">
+                    GO DEEPER ↓
+                </button>
+            `;
+            root.appendChild(newLayer);
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
