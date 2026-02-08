@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>CONTACT | AYAZ CHAUHAN</title><script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-gray-50 p-10 font-sans">
+    <div class="max-w-2xl mx-auto bg-white p-12 shadow-2xl border-b-8 border-blue-600 rounded-lg">
+        <h1 class="text-4xl font-black mb-6 uppercase tracking-widest">SECURE CONTACT</h1>
+        <p class="text-gray-600 mb-10 italic">"₹5,00,000+ ke projects ke liye humse seedha sampark karein."</p>
+        
+        <div class="space-y-6">
+            <div class="p-6 bg-gray-100 rounded border-l-4 border-black">
+                <p class="text-xs text-gray-400">OFFICIAL CORRESPONDENCE</p>
+                <p class="text-xl font-bold">ayazchauhan774@gmail.com</p>
+            </div>
+            <div class="p-6 bg-gray-100 rounded border-l-4 border-black">
+                <p class="text-xs text-gray-400">GLOBAL EMPIRE HEADQUARTERS</p>
+                <p class="text-xl font-bold">Silicon Valley / Dubai Hub</p>
+            </div>
+        </div>
+
+        <p class="mt-12 text-sm text-gray-400 uppercase font-bold text-center">Inquiry Response Time: 24 Hours</p>
+        <a href="index.html" class="block text-center mt-10 text-blue-600 font-bold underline">← RETURN TO PORTAL</a>
+    </div>
+</body>
+</html>
