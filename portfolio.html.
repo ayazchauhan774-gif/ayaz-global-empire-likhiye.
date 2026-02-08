@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>PORTFOLIO | AYAZ CHAUHAN</title><script src="https://cdn.tailwindcss.com"></script></head>
+<body class="bg-[#111] text-white p-10 font-sans">
+    <div class="max-w-5xl mx-auto">
+        <h1 class="text-5xl font-black mb-4 gold-text tracking-tighter uppercase italic">Proven Results</h1>
+        <p class="text-gray-400 mb-12 border-l-4 border-green-500 pl-4">"Humne Silicon Valley se Dubai tak high-end AI models deploy kiye hain."</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-800 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-2">Project: AI-Core 2025</h3>
+                <p class="text-green-500 text-sm mb-4 uppercase">Status: 100% Successful</p>
+                <p class="text-gray-400 text-sm">Large scale data mining aur neural network optimization mission for global clients.</p>
+            </div>
+            <div class="bg-gray-900 p-8 rounded-xl border border-gray-800 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-2">Video Engine X</h3>
+                <p class="text-blue-400 text-sm mb-4 uppercase">Quality: 8K Production</p>
+                <p class="text-gray-400 text-sm">Automated video editing pipeline for high-traffic YouTube & Media houses.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="inline-block mt-16 border-b-2 border-white pb-1 font-black hover:text-green-500 transition">← BACK TO COMMAND CENTER</a>
+    </div>
+    <style>.gold-text { color: #febd69; }</style>
+</body>
+</html>
