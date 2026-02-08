@@ -3,63 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AYAZ CHAUHAN | SUPREME ACCESS</title>
+    <title>AYAZ CHAUHAN | SUPREME GLOBAL INTERFACE</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;900&display=swap" rel="stylesheet">
     <style>
-        body { background: #000; color: white; font-family: 'Inter', sans-serif; overflow: hidden; }
-        .syncopate { font-family: 'Syncopate', sans-serif; }
-        .gold-gradient { background: linear-gradient(135deg, #fff 0%, #febd69 50%, #8b6b3f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(25px); border: 1px solid rgba(254, 189, 105, 0.2); }
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 100; backdrop-filter: blur(20px); }
-        .input-premium { background: transparent; border-bottom: 2px solid rgba(254, 189, 105, 0.2); color: white; transition: all 0.4s; }
-        .input-premium:focus { border-color: #febd69; outline: none; }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inter:wght@400;700&display=swap');
+        
+        body { background-color: #080a0c; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .amazon-dark { background-color: #131921; }
+        .amazon-gold { color: #febd69; }
+        .gold-bg { background-color: #febd69; }
+        
+        /* 10x Premium Animations */
+        .hero-title { font-family: 'Montserrat', sans-serif; letter-spacing: -2px; line-height: 0.9; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: all 0.5s ease; }
+        .glass-card:hover { background: rgba(255, 255, 255, 0.07); transform: translateY(-10px); border-color: #febd69; }
+        
+        .white-section { background: #ffffff; color: #131921; }
+        .input-box { border: 2px solid #e5e7eb; border-radius: 12px; padding: 15px; width: 100%; transition: 0.3s; font-weight: 600; }
+        .input-box:focus { border-color: #febd69; outline: none; box-shadow: 0 0 15px rgba(254, 189, 105, 0.2); }
+        
+        /* Floating Background Elements */
+        .glow { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(254, 189, 105, 0.1) 0%, transparent 70%); z-index: -1; }
     </style>
 </head>
-<body class="bg-black">
+<body>
 
-    <section class="min-h-screen flex flex-col items-center justify-center relative px-6">
-        <div class="text-center mb-16">
-            <h1 class="syncopate text-6xl md:text-[8rem] font-black gold-gradient leading-none mb-6">AYAZ<br>CHAUHAN</h1>
-            <p class="tracking-[15px] opacity-30 text-xs uppercase mb-12">Silicon Valley Architecture</p>
-            
-            <button onclick="openPortal()" class="px-16 py-6 rounded-full border border-[#febd69] text-[#febd69] font-black tracking-widest uppercase hover:bg-[#febd69] hover:text-black transition-all duration-700 shadow-[0_0_30px_rgba(254,189,105,0.2)]">
-                GET INSTANT ACCESS →
-            </button>
+    <nav class="amazon-dark p-5 flex justify-between items-center sticky top-0 z-50 border-b border-white/5">
+        <div class="text-3xl font-black italic tracking-tighter">
+            <span class="amazon-gold">AYAZ</span> CHAUHAN
         </div>
+        <div class="hidden md:flex space-x-8 text-[10px] tracking-[3px] font-bold uppercase opacity-80">
+            <a href="#" class="hover:text-[#febd69]">All Services</a>
+            <a href="#" class="hover:text-[#febd69]">AI Data Mining</a>
+            <a href="#" class="hover:text-[#febd69]">Infrastructure</a>
+        </div>
+        <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Live Node</span>
+        </div>
+    </nav>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full opacity-60">
-            <div class="glass-panel p-6 rounded-3xl text-center text-[10px] tracking-[5px] uppercase">Node Status: Active</div>
-            <div class="glass-panel p-6 rounded-3xl text-center text-[10px] tracking-[5px] uppercase">Mission: ₹100CR</div>
-            <div class="glass-panel p-6 rounded-3xl text-center text-[10px] tracking-[5px] uppercase">Target: 04.03.2026</div>
+    <main class="relative py-24 px-6 text-center overflow-hidden">
+        <div class="glow top-0 left-1/4"></div>
+        <h2 class="text-xs tracking-[15px] uppercase opacity-40 mb-6">The Global Architecture of</h2>
+        <h1 class="hero-title text-7xl md:text-9xl font-black mb-8 uppercase">
+            GLOBAL <span class="amazon-gold">EMPIRE</span><br>PORTAL
+        </h1>
+        <p class="text-xl text-gray-500 italic max-w-3xl mx-auto mb-16 leading-relaxed">
+            "We Train AI. We Mine Data. We Control The Future."
+        </p>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 shadow-2xl rounded-[40px] overflow-hidden border border-white/10">
+            <div class="amazon-dark p-12 flex flex-col justify-center text-left">
+                <h3 class="amazon-gold text-3xl font-black italic mb-4 uppercase">Identity<br>Verification</h3>
+                <p class="text-sm text-gray-400">Silicon Valley Level Security Protocol. Sync your details to enter the core.</p>
+            </div>
+            <div class="white-section p-12">
+                <form class="space-y-6">
+                    <input type="email" class="input-box text-sm uppercase tracking-widest" placeholder="Official Email Address" required>
+                    <input type="tel" class="input-box text-sm uppercase tracking-widest" placeholder="Phone Number" required>
+                    <button type="button" onclick="alert('ACCESS GRANTED TO AYAZ CHAUHAN NETWORK')" class="w-full gold-bg text-black py-5 rounded-xl font-black text-lg hover:scale-105 transition-all shadow-lg uppercase tracking-widest">
+                        Sync & Enter →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <section class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-card p-10 rounded-3xl">
+            <div class="w-10 h-1 gold-bg mb-6"></div>
+            <h4 class="text-2xl font-bold mb-4 italic">AI Training</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Silicon Valley level models ko train karne ka asli hub. Direct node activation for workers.</p>
+        </div>
+        <div class="glass-card p-10 rounded-3xl">
+            <div class="w-10 h-1 gold-bg mb-6"></div>
+            <h4 class="text-2xl font-bold mb-4 italic">Global Infrastructure</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">24/7 legal data mining across multiple trusted global sources. Automated earnings.</p>
+        </div>
+        <div class="glass-card p-10 rounded-3xl">
+            <div class="w-10 h-1 gold-bg mb-6"></div>
+            <h4 class="text-2xl font-bold mb-4 italic">Elite Network</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Join the team earning ₹40,000+ through strategic training missions.</p>
         </div>
     </section>
 
-    <div id="portalModal" class="modal-overlay items-center justify-center">
-        <div class="glass-panel p-12 rounded-[50px] max-w-lg w-full text-center relative mx-4">
-            <button onclick="closePortal()" class="absolute top-6 right-8 text-gray-500 hover:text-white">✕</button>
-            <h3 class="syncopate text-2xl gold-gradient mb-4">IDENTITY SYNC</h3>
-            <p class="text-xs text-gray-400 tracking-widest uppercase mb-10">Secure Entry Protocol</p>
-            
-            <form class="space-y-10">
-                <input type="email" placeholder="OFFICIAL EMAIL ADDRESS" class="w-full input-premium py-4 text-center tracking-widest text-xs uppercase" required>
-                <input type="tel" placeholder="PRIVATE PHONE NUMBER" class="w-full input-premium py-4 text-center tracking-widest text-xs uppercase" required>
-                
-                <button type="button" onclick="verify()" class="w-full bg-[#febd69] text-black py-5 rounded-full font-black tracking-[8px] uppercase hover:bg-white transition">
-                    VERIFY IDENTITY
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        function openPortal() { document.getElementById('portalModal').style.display = 'flex'; }
-        function closePortal() { document.getElementById('portalModal').style.display = 'none'; }
-        function verify() {
-            alert('IDENTITY VERIFIED. ACCESS GRANTED TO AYAZ CHAUHAN NETWORK.');
-            window.location.href = 'universe.html';
-        }
-    </script>
+    <footer class="amazon-dark py-12 text-center border-t border-white/5">
+        <p class="text-[10px] tracking-[10px] uppercase font-bold opacity-30">Mohd Ayaz Rajput Vision • Burj Khalifa 2027 • ₹100CR Target</p>
+    </footer>
 
 </body>
 </html>
