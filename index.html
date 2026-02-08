@@ -2,63 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AYAZ CHAUHAN | GLOBAL COMMAND CENTER</title>
+    <title>AC | COMMAND DASHBOARD</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background: #050505; color: #fff; font-family: 'Inter', sans-serif; }
-        .neon-border { border: 1px solid #00f2ff; box-shadow: 0 0 15px rgba(0, 242, 255, 0.2); }
-        .glow-text { text-shadow: 0 0 10px #00f2ff; }
-        .gradient-bg { background: linear-gradient(135deg, #0f0f0f 0%, #000 100%); }
+        body { background: #000; color: #00f2ff; font-family: 'Courier New', Courier, monospace; }
+        .grid-bg { background-image: linear-gradient(rgba(0, 242, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 242, 255, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+        .scanline { width: 100%; height: 2px; background: rgba(0, 242, 255, 0.3); position: absolute; animation: scan 4s linear infinite; }
+        @keyframes scan { from { top: 0; } to { top: 100%; } }
     </style>
 </head>
-<body class="gradient-bg">
-    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
-        <div class="text-2xl font-bold tracking-tighter glow-text">AC EMPIRE</div>
-        <div class="hidden md:flex gap-8 text-sm opacity-70">
-            <a href="#">SYSTEMS</a>
-            <a href="#">WORKER LOG</a>
-            <a href="#">FINANCIALS</a>
+<body class="grid-bg min-h-screen p-8">
+    <div class="scanline"></div>
+    <div class="max-w-6xl mx-auto">
+        <div class="flex justify-between border-b border-cyan-900 pb-4 mb-8">
+            <h1 class="text-2xl font-bold">SYSTEM_OVERRIDE: ACTIVE</h1>
+            <div class="text-right">SERVER_TIME: 21:45:02</div>
         </div>
-        <div class="text-xs border border-cyan-500 px-3 py-1 rounded-full text-cyan-500">SERVER: SECURE</div>
-    </nav>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="border border-cyan-500 p-4 bg-black/80">
+                <p class="text-xs opacity-50">GLOBAL_MINING</p>
+                <p class="text-xl font-bold">$1.4M / HR</p>
+            </div>
+            <div class="border border-cyan-500 p-4 bg-black/80">
+                <p class="text-xs opacity-50">WORKER_CPU</p>
+                <p class="text-xl font-bold">98.4%</p>
+            </div>
+            <div class="border border-cyan-500 p-4 bg-black/80 text-green-400">
+                <p class="text-xs opacity-50">ACCOUNT_BALANCE</p>
+                <p class="text-xl font-bold">$40,000.00</p>
+            </div>
+            <div class="border border-cyan-500 p-4 bg-black/80">
+                <p class="text-xs opacity-50">S25_DEVICES</p>
+                <p class="text-xl font-bold">25 ONLINE</p>
+            </div>
+        </div>
 
-    <section class="py-20 px-6 text-center">
-        <h2 class="text-xs uppercase tracking-[0.5em] text-cyan-400 mb-4">Architect of Global Systems</h2>
-        <h1 class="text-5xl md:text-7xl font-black mb-6">AYAZ CHAUHAN</h1>
-        <p class="max-w-2xl mx-auto opacity-50 mb-10 text-sm">Deploying high-frequency AI training models and global financial infrastructure from Silicon Valley to the world.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <button onclick="alert('Initializing Secure Gateway...')" class="bg-cyan-500 text-black px-8 py-3 rounded font-bold hover:bg-white transition">HIRE FOR PROJECT</button>
-            <button onclick="alert('Accessing Encrypted Worker Logs...')" class="border border-white/20 px-8 py-3 rounded font-bold hover:bg-white/10">VIEW LIVE LOGS</button>
+        <div class="border border-cyan-500 p-8 h-64 bg-black/80 flex items-center justify-center">
+            <p class="animate-pulse">>>> ANALYZING GLOBAL MARKET DATA... [OK]</p>
         </div>
-    </section>
-
-    <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <div class="neon-border p-6 rounded-xl bg-white/5">
-            <div class="text-xs opacity-50 mb-2">LIVE EARNINGS (PROJECTION)</div>
-            <div class="text-3xl font-bold text-green-400">$100,000,000,000</div>
-        </div>
-        <div class="neon-border p-6 rounded-xl bg-white/5">
-            <div class="text-xs opacity-50 mb-2">WORKER STATUS</div>
-            <div class="text-3xl font-bold text-cyan-400">ACTIVE - 99.9%</div>
-        </div>
-        <div class="neon-border p-6 rounded-xl bg-white/5">
-            <div class="text-xs opacity-50 mb-2">DEVICES SYNCED</div>
-            <div class="text-3xl font-bold">25x SAMSUNG S25</div>
-        </div>
-    </section>
-
-    <section class="py-20 px-6 bg-white/5 mt-10 text-center">
-        <h3 class="text-2xl font-bold mb-4">Enterprise Integration</h3>
-        <p class="opacity-50 mb-8">Connect your banking API directly to our training worker.</p>
-        <div class="max-w-md mx-auto bg-black p-8 rounded-2xl border border-gray-800">
-            <input type="text" placeholder="Amount (USD)" class="w-full bg-transparent border-b border-gray-700 p-3 mb-6 outline-none focus:border-cyan-500">
-            <button onclick="confirm('Proceed to Secure Payment Gateway?')" class="w-full py-4 bg-white text-black font-black rounded-lg">INITIALIZE SECURE PAY</button>
-        </div>
-    </section>
-
-    <footer class="p-10 text-center text-[10px] opacity-30">
-        © 2026 AYAZ CHAUHAN GLOBAL. ALL RIGHTS RESERVED. ENCRYPTED DEPLOYMENT.
-    </footer>
+        
+        <a href="index.html" class="mt-8 inline-block border border-white px-6 py-2 text-white hover:bg-white hover:text-black transition">RETURN TO COMMAND</a>
+    </div>
 </body>
 </html>
+
