@@ -3,93 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AYAZ CHAUHAN | SUPREME GLOBAL INTERFACE</title>
+    <title>AYAZ CHAUHAN | SUPREME GLOBAL EMPIRE</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inter:wght@400;700&display=swap');
-        
-        body { background-color: #080a0c; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        body { background-color: #0d1117; color: white; font-family: 'Inter', sans-serif; }
         .amazon-dark { background-color: #131921; }
         .amazon-gold { color: #febd69; }
         .gold-bg { background-color: #febd69; }
         
-        /* 10x Premium Animations */
-        .hero-title { font-family: 'Montserrat', sans-serif; letter-spacing: -2px; line-height: 0.9; }
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); transition: all 0.5s ease; }
-        .glass-card:hover { background: rgba(255, 255, 255, 0.07); transform: translateY(-10px); border-color: #febd69; }
+        /* Image jaisa Complex Circuit Background */
+        .circuit-bg { 
+            background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.9)), 
+            url('https://www.transparenttextures.com/patterns/circuit-board.png'),
+            url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80');
+            background-size: cover; background-attachment: fixed;
+        }
+
+        /* Image wale White Cards ka Premium Level */
+        .white-card { 
+            background: #ffffff; color: #131921; border-radius: 4px; 
+            border-bottom: 5px solid #febd69; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: 0.3s ease;
+        }
+        .white-card:hover { transform: translateY(-10px); }
+
+        .nav-link { font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; }
+        .nav-link:hover { opacity: 1; color: #febd69; }
         
-        .white-section { background: #ffffff; color: #131921; }
-        .input-box { border: 2px solid #e5e7eb; border-radius: 12px; padding: 15px; width: 100%; transition: 0.3s; font-weight: 600; }
-        .input-box:focus { border-color: #febd69; outline: none; box-shadow: 0 0 15px rgba(254, 189, 105, 0.2); }
-        
-        /* Floating Background Elements */
-        .glow { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(254, 189, 105, 0.1) 0%, transparent 70%); z-index: -1; }
+        .input-elite { background: #f3f4f6; border: 2px solid #e5e7eb; border-radius: 8px; padding: 15px; width: 100%; color: #131921; font-weight: bold; }
+        .input-elite:focus { border-color: #febd69; outline: none; }
     </style>
 </head>
-<body>
+<body class="circuit-bg">
 
-    <nav class="amazon-dark p-5 flex justify-between items-center sticky top-0 z-50 border-b border-white/5">
-        <div class="text-3xl font-black italic tracking-tighter">
+    <nav class="amazon-dark p-5 border-b border-gray-800 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50">
+        <div class="text-3xl font-black italic tracking-tighter mb-4 md:mb-0">
             <span class="amazon-gold">AYAZ</span> CHAUHAN
         </div>
-        <div class="hidden md:flex space-x-8 text-[10px] tracking-[3px] font-bold uppercase opacity-80">
-            <a href="#" class="hover:text-[#febd69]">All Services</a>
-            <a href="#" class="hover:text-[#febd69]">AI Data Mining</a>
-            <a href="#" class="hover:text-[#febd69]">Infrastructure</a>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="#" class="nav-link">☰ ALL SERVICES</a>
+            <a href="#" class="nav-link">AI DATA MINING</a>
+            <a href="#" class="nav-link">CRYPTO INFRASTRUCTURE</a>
+            <a href="#" class="nav-link text-red-500">LIVE NODES</a>
         </div>
-        <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+        <div class="hidden lg:flex items-center space-x-2 bg-white/5 px-4 py-2 rounded-lg border border-white/10 mt-4 md:mt-0">
             <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span class="text-[9px] font-bold uppercase tracking-widest">Live Node</span>
+            <span class="text-[9px] font-bold uppercase tracking-[2px]">System: Optimized</span>
         </div>
     </nav>
 
-    <main class="relative py-24 px-6 text-center overflow-hidden">
-        <div class="glow top-0 left-1/4"></div>
-        <h2 class="text-xs tracking-[15px] uppercase opacity-40 mb-6">The Global Architecture of</h2>
-        <h1 class="hero-title text-7xl md:text-9xl font-black mb-8 uppercase">
-            GLOBAL <span class="amazon-gold">EMPIRE</span><br>PORTAL
+    <section class="py-20 px-6 text-center">
+        <h1 class="text-6xl md:text-8xl font-black mb-4 uppercase tracking-tighter leading-none">
+            GLOBAL <span class="amazon-gold">EMPIRE</span> PORTAL
         </h1>
-        <p class="text-xl text-gray-500 italic max-w-3xl mx-auto mb-16 leading-relaxed">
+        <p class="text-xl md:text-2xl italic text-gray-300 mb-12 font-light">
             "We Train AI. We Mine Data. We Control The Future."
         </p>
 
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 shadow-2xl rounded-[40px] overflow-hidden border border-white/10">
-            <div class="amazon-dark p-12 flex flex-col justify-center text-left">
-                <h3 class="amazon-gold text-3xl font-black italic mb-4 uppercase">Identity<br>Verification</h3>
-                <p class="text-sm text-gray-400">Silicon Valley Level Security Protocol. Sync your details to enter the core.</p>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 rounded-[20px] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+            <div class="amazon-dark p-12 flex flex-col justify-center text-left border-r border-white/5">
+                <h3 class="amazon-gold text-3xl font-black italic mb-4">IDENTITY SYNC</h3>
+                <p class="text-xs text-gray-400 tracking-widest leading-loose">ACCESSING SILICON VALLEY SERVERS. PLEASE ENTER YOUR CREDENTIALS TO SYNC WITH THE GLOBAL NETWORK.</p>
+                <div class="mt-8 text-2xl font-bold">₹100,000,000,000</div>
+                <div class="text-[8px] tracking-[4px] opacity-40 uppercase">Target Valuation</div>
             </div>
-            <div class="white-section p-12">
+            <div class="bg-white p-12 text-left">
                 <form class="space-y-6">
-                    <input type="email" class="input-box text-sm uppercase tracking-widest" placeholder="Official Email Address" required>
-                    <input type="tel" class="input-box text-sm uppercase tracking-widest" placeholder="Phone Number" required>
-                    <button type="button" onclick="alert('ACCESS GRANTED TO AYAZ CHAUHAN NETWORK')" class="w-full gold-bg text-black py-5 rounded-xl font-black text-lg hover:scale-105 transition-all shadow-lg uppercase tracking-widest">
-                        Sync & Enter →
+                    <div>
+                        <label class="text-[9px] font-black uppercase tracking-widest text-gray-400">Email Address</label>
+                        <input type="email" class="input-elite" placeholder="name@empire.com" required>
+                    </div>
+                    <div>
+                        <label class="text-[9px] font-black uppercase tracking-widest text-gray-400">Phone Number</label>
+                        <input type="tel" class="input-elite" placeholder="+91 XXXX-XXXXXX" required>
+                    </div>
+                    <button type="button" onclick="alert('IDENTITY SYNCED. REDIRECTING...')" class="w-full gold-bg text-black font-black py-5 rounded-lg text-lg uppercase tracking-[4px] hover:bg-black hover:text-white transition-all shadow-xl">
+                        Verify & Enter Core
                     </button>
                 </form>
             </div>
         </div>
-    </main>
+    </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="glass-card p-10 rounded-3xl">
-            <div class="w-10 h-1 gold-bg mb-6"></div>
-            <h4 class="text-2xl font-bold mb-4 italic">AI Training</h4>
-            <p class="text-gray-400 text-sm leading-relaxed">Silicon Valley level models ko train karne ka asli hub. Direct node activation for workers.</p>
+    <section class="max-w-7xl mx-auto px-6 pb-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="white-card p-10">
+            <h4 class="text-2xl font-black italic mb-4 border-b-2 border-gray-100 pb-4 uppercase">AI Training</h4>
+            <p class="text-sm font-medium leading-relaxed mb-8">Silicon Valley level models ko train karne ka asli hub. Direct node activation for workers.</p>
+            <button class="gold-bg text-black px-8 py-3 rounded font-bold text-xs uppercase tracking-widest">Our Solutions</button>
         </div>
-        <div class="glass-card p-10 rounded-3xl">
-            <div class="w-10 h-1 gold-bg mb-6"></div>
-            <h4 class="text-2xl font-bold mb-4 italic">Global Infrastructure</h4>
-            <p class="text-gray-400 text-sm leading-relaxed">24/7 legal data mining across multiple trusted global sources. Automated earnings.</p>
+        <div class="white-card p-10">
+            <h4 class="text-2xl font-black italic mb-4 border-b-2 border-gray-100 pb-4 uppercase">Data Mining</h4>
+            <p class="text-sm font-medium leading-relaxed mb-8">Legal and secure data extraction for billion-dollar networks. 24/7 infrastructure active.</p>
+            <button class="bg-[#2da44e] text-white px-8 py-3 rounded font-bold text-xs uppercase tracking-widest">Join Team (₹20K/Mo)</button>
         </div>
-        <div class="glass-card p-10 rounded-3xl">
-            <div class="w-10 h-1 gold-bg mb-6"></div>
-            <h4 class="text-2xl font-bold mb-4 italic">Elite Network</h4>
-            <p class="text-gray-400 text-sm leading-relaxed">Join the team earning ₹40,000+ through strategic training missions.</p>
+        <div class="white-card p-10">
+            <h4 class="text-2xl font-black italic mb-4 border-b-2 border-gray-100 pb-4 uppercase">Global Nodes</h4>
+            <p class="text-sm font-medium leading-relaxed mb-8">Join the elite force earning ₹40,000+ through strategic training missions.</p>
+            <button class="bg-black text-white px-8 py-3 rounded font-bold text-xs uppercase tracking-widest">Learn More</button>
         </div>
     </section>
 
-    <footer class="amazon-dark py-12 text-center border-t border-white/5">
-        <p class="text-[10px] tracking-[10px] uppercase font-bold opacity-30">Mohd Ayaz Rajput Vision • Burj Khalifa 2027 • ₹100CR Target</p>
+    <footer class="amazon-dark py-10 text-center border-t border-gray-800 opacity-40">
+        <p class="text-[9px] tracking-[10px] uppercase font-bold">Mohd Ayaz Rajput • Burj Khalifa 2027 • ₹100CR Vision</p>
     </footer>
 
 </body>
